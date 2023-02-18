@@ -9,15 +9,38 @@
   --space-grey-color: #434455;
   --white-grey-color: #e7e9fc;
 }
-
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+}
+address {
+  font-style: normal;
+}
 body {
   font-family: var(--primary-font);
   background-color: var(--white-color);
-
   color: var(--primary-text-color);
 }
 
 /*------component-------*/
+
 .list {
   list-style: none;
   display: flex;
@@ -25,7 +48,9 @@ body {
 }
 .link {
   text-decoration: none;
-  margin-right: 40px;
+}
+.indentation li:not(:first-child) {
+  margin-left: 40px;
 }
 
 .secret {
@@ -59,23 +84,25 @@ body {
 }
 
 /* header  */
-.connection {
-  margin-right: auto;
-}
 .navigation {
-  margin-left: 76px;
+  padding-left: 76px;
 }
 .top-navigation {
   display: flex;
   align-items: center;
 }
 .top-header {
+  height: 72px;
   display: flex;
   align-items: center;
+  padding-top: 24px;
 }
 .menu {
   display: flex;
   align-items: center;
+}
+.connection {
+  margin-left: 332px;
 }
 .studio-logo {
   color: var(--primary-text-color);
@@ -88,7 +115,7 @@ body {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
-  margin-left: 156px;
+  margin-right: 76px;
 }
 .hat {
   font-family: var(--primary-font);
@@ -138,6 +165,14 @@ h1 {
 }
 .hero {
   background-color: var(--primary-text-color);
+  height: 600px;
+}
+.hero-centr {
+  margin-left: 331px;
+  margin-bottom: 48px;
+}
+.part-text {
+  margin-left: 15px;
 }
 
 .button-order {
@@ -154,8 +189,13 @@ h1 {
   color: var(--white-color);
   background-color: var(--blue-color);
   cursor: pointer;
-  margin-left: 636px;
+  margin-left: 495px;
 }
+
+.hero-centr {
+  padding-top: 188px;
+}
+
 .button-order:hover,
 .button-order:focus {
   color: var(--white-color);
@@ -163,6 +203,13 @@ h1 {
 }
 
 /* section 2 */
+.sub-studio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.manuscript li:not(:first-child) {
+  margin-left: 24px;
+}
 
 .text {
   font-family: var(--primary-font);
@@ -176,13 +223,58 @@ h1 {
 
 /* section 3 */
 
+.sub-portfolio {
+  padding-left: 488px;
+  padding-bottom: 72px;
+}
+
+.photo-work li:not(:first-child) {
+  margin-left: 24px;
+  padding-bottom: 120px;
+}
 .back {
   background-color: var(--grey-color);
 }
+/* -------------section 4------------ */
 
-/* footer */
+.sub-team {
+  margin-left: 568px;
+  padding-bottom: 72px;
+  padding-top: 120px;
+}
+
+.team-list li:not(:first-child) {
+  margin-left: 24px;
+  margin-bottom: 120px;
+}
+.icon-team {
+  border-radius: 4px;
+}
+.card-team {
+  background-color: var(--white-color);
+  width: 264px;
+  height: 380px;
+  box-shadow: 0px 1px 6px;
+  border-radius: 0px 0px 4px 4px;
+}
+.card-content-team {
+  outline: 1px solid tomato;
+  width: 232px;
+  height: 56px;
+  margin-top: 32px;
+  margin-left: 16px;
+}
+
+/* -----------footer---------- */
+
+.sub-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .top-footer {
   background-color: var(--primary-text-color);
+  height: 310px;
 }
 
 .studio-logo-footer {
@@ -195,12 +287,10 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-grey-color);
-  margin-left: 156px;
 }
 
 /* Portfolio */
 .navigation-list-item {
-  min-width: 130px;
   padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid #e7e9fc;
@@ -221,16 +311,37 @@ h1 {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
+
 .references {
-  margin-left: 427px;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sub-cart {
+  margin-left: 24px;
+}
+.card {
+  width: 360px;
+  height: 420px;
 }
 .advertising {
-  margin-right: 24px;
+  outline: 1px solid #e7e9fc;
   margin-bottom: 48px;
 }
-.advertising:nth-last-child(3n) {
-  margin-right: 24px;
+.card-content {
+  margin-top: 32px;
+  margin-left: 16px;
 }
-.advertising:nth-last-child(-3 + n) {
-  margin-bottom: 48px;
+.text {
+  margin-top: 8px;
 }

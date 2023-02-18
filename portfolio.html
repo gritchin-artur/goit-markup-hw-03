@@ -12,23 +12,34 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Hat site -->
-    <header class="top-header">
+
+    <header class="top-header container">
       <nav class="top-navigation">
         <a class="logo link" href="./index.html"
           >WEB<span class="studio-logo">STUDIO</span></a
         >
-        <ul class="menu list">
-          <li><a class="link hat" href="./studio.html">Studio</a></li>
-          <li><a class="link hat" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="link hat" href="./contacts.html">Contacts</a></li>
+        <ul class="menu list indentation">
+          <li>
+            <a class="link hat" href="./studio.html">Studio</a>
+          </li>
+          <li>
+            <a class="link hat" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="link hat" href="./contacts.html">Contacts</a>
+          </li>
         </ul>
       </nav>
       <address>
-        <ul class="menu list">
+        <ul class="menu list connection indentation">
           <li>
             <a class="link contact" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -48,14 +59,18 @@
     <main>
       <!-- Buttons -->
       <section>
-        <div>
-          <h1>buttons</h1>
+        <h1>buttons</h1>
+        <div class="container">
           <ul class="list menu references">
-            <li><button class="navigation-list-item" type="">All</button></li>
+            <li>
+              <button class="navigation-list-item" type="">All</button>
+            </li>
             <li>
               <button class="navigation-list-item" type="">Web Site</button>
             </li>
-            <li><button class="navigation-list-item" type="">App</button></li>
+            <li>
+              <button class="navigation-list-item" type="">App</button>
+            </li>
             <li>
               <button class="navigation-list-item" type="">Design</button>
             </li>
@@ -69,108 +84,170 @@
       <!-- Pages -->
       <section>
         <h2 class="secret">our works</h2>
-        <ul class="list">
-          <li class="advertising">
-            <img src="./images/pf1.jpg" alt="banking" />
-            <h3 class="subtitle-description">Banking App Interface Concept</h3>
-            <p class="text">App</p>
-          </li>
-          <li class="advertising">
-            <img
-              src="./images/pf2.jpg"
-              alt="cahsless payment"
-              width="360"
-              height="300"
-            />
-            <h3 class="subtitle-description">Cashless Payment</h3>
-            <p class="text">Marketing</p>
-          </li>
-          <li class="advertising">
-            <img
-              src="./images/pf3.jpg"
-              alt="meditation"
-              width="360"
-              height="300"
-            />
-            <h3 class="subtitle-description">Meditaion App</h3>
-            <p class="text">App</p>
-          </li>
-          <li class="advertising">
-            <img
-              src="./images/pf4.jpg"
-              alt="Taxi Service"
-              width="360"
-              height="300"
-            />
-            <h3 class="subtitle-description">Taxi Service</h3>
-            <p class="text">Marketing</p>
-          </li>
-          <li class="advertising">
-            <img
-              src="./images/pf5.jpg"
-              alt="Screen Illustrations"
-              width="360"
-              height="300"
-            />
-            <h3 class="subtitle-description">Screen Illustrations</h3>
-            <p class="text">Design</p>
-          </li>
-          <li class="advertising">
-            <img
-              src="./images/pf9.jpg"
-              alt="Online Courses"
-              width="360"
-              height="300"
-            />
+        <div class="container">
+          <ul class="list card-set">
+            <li class="advertising">
+              <article class="card">
+                <div class="card-tumb">
+                  <img src="./images/pf1.jpg" alt="banking" />
+                  <div class="card-content">
+                    <h3 class="subtitle-description">
+                      Banking App Interface Concept
+                    </h3>
+                    <p class="text">App</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="advertising sub-cart">
+              <article class="card">
+                <div class="card-tumb">
+                  <img
+                    src="./images/pf2.jpg"
+                    alt="cahsless payment"
+                    width="360"
+                    height="300"
+                  />
+                  <div class="card-content">
+                    <h3 class="subtitle-description">Cashless Payment</h3>
+                    <p class="text">Marketing</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="advertising sub-cart">
+              <article class="card">
+                <div class="card-tumb">
+                  <img
+                    src="./images/pf3.jpg"
+                    alt="meditation"
+                    width="360"
+                    height="300"
+                  />
+                  <div class="card-content">
+                    <h3 class="subtitle-description">Meditaion App</h3>
+                    <p class="text">App</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="advertising">
+              <article class="card">
+                <div class="card-tumb">
+                  <img
+                    src="./images/pf4.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                    height="300"
+                  />
+                  <div class="card-content">
+                    <h3 class="subtitle-description">Taxi Service</h3>
+                    <p class="text">Marketing</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="advertising sub-cart">
+              <article class="card">
+                <div class="card-tumb">
+                  <img
+                    src="./images/pf5.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                    height="300"
+                  />
+                  <div class="card-content">
+                    <h3 class="subtitle-description">Screen Illustrations</h3>
+                    <p class="text">Design</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="advertising sub-cart">
+              <article class="card">
+                <div class="card-tumb">
+                  <img
+                    src="./images/pf9.jpg"
+                    alt="Online Courses"
+                    width="360"
+                    height="300"
+                  />
+                  <div class="card-content">
+                    <h3 class="subtitle-description">Online Courses</h3>
+                    <p class="text">Marketing</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="advertising">
+              <article class="card">
+                <div class="card-tumb">
+                  <img
+                    src="./images/pf6.jpg"
+                    alt="nstagram Stories Concept"
+                    width="360"
+                    height="300"
+                  />
+                  <div class="card-content">
+                    <h3 class="subtitle-description">
+                      Instagram Stories Concept
+                    </h3>
+                    <p class="text">Design</p>
+                  </div>
+                </div>
+              </article>
+            </li>
 
-            <h3 class="subtitle-description">Online Courses</h3>
-            <p class="text">Marketing</p>
-          </li>
-          <li class="advertising">
-            <img
-              src="./images/pf6.jpg"
-              alt="nstagram Stories Concept"
-              width="360"
-              height="300"
-            />
-            <h3 class="subtitle-description">Instagram Stories Concept</h3>
-            <p class="text">Design</p>
-          </li>
-
-          <li class="advertising">
-            <img
-              src="./images/pf7.jpg"
-              alt="Organic Food"
-              width="360"
-              height="300"
-            />
-            <h3 class="subtitle-description">Organic Food</h3>
-            <p class="text">Web Site</p>
-          </li>
-          <li class="advertising">
-            <img
-              src="./images/pf8.jpg"
-              alt="Fresh Coffee"
-              width="360"
-              height="300"
-            />
-            <h3 class="subtitle-description">Fresh Coffee</h3>
-            <p class="text">Web Site</p>
-          </li>
-        </ul>
+            <li class="advertising sub-cart">
+              <article class="card">
+                <div class="card-tumb">
+                  <img
+                    src="./images/pf7.jpg"
+                    alt="Organic Food"
+                    width="360"
+                    height="300"
+                  />
+                  <div class="card-content">
+                    <h3 class="subtitle-description">Organic Food</h3>
+                    <p class="text">Web Site</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="advertising sub-cart">
+              <article class="card">
+                <div class="card-tumb">
+                  <img
+                    src="./images/pf8.jpg"
+                    alt="Fresh Coffee"
+                    width="360"
+                    height="300"
+                  />
+                  <div class="card-content">
+                    <h3 class="subtitle-description">Fresh Coffee</h3>
+                    <p class="text">Web Site</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
 
     <footer class="top-footer">
-      <a class="logo link" href="./index.html"
-        >WEB<span class="studio-logo-footer">STUDIO</span></a
-      >
-      <p class="about">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container sub-footer">
+        <a class="logo link" href="./index.html"
+          >WEB<span class="studio-logo-footer">STUDIO</span></a
+        >
+        <p class="about">
+          Increase the flow of customers and <br />
+          sales for your business with digital <br />
+          marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
