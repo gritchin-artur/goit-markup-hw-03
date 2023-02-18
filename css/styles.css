@@ -40,6 +40,13 @@ body {
 }
 
 /*------component-------*/
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .list {
   list-style: none;
@@ -153,7 +160,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--space-grey-color);
 }
-/* section 1 */
+/* -------------section 1 (Hero)----------- */
 
 h1 {
   font-family: var(--primary-font);
@@ -202,7 +209,7 @@ h1 {
   background-color: var(--accent-color);
 }
 
-/* section 2 */
+/*------------ section 2 (About studio)---------*/
 .sub-studio {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -221,7 +228,7 @@ h1 {
   color: var(--space-grey-color);
 }
 
-/* section 3 */
+/* ------------section 3 (Portfolio)----------*/
 
 .sub-portfolio {
   padding-left: 488px;
@@ -235,7 +242,7 @@ h1 {
 .back {
   background-color: var(--grey-color);
 }
-/* -------------section 4------------ */
+/* -------------section 4 (Team)------------ */
 
 .sub-team {
   margin-left: 568px;
@@ -289,7 +296,7 @@ h1 {
   color: var(--white-grey-color);
 }
 
-/* Portfolio */
+/* --------------Portfolio buttons------------- */
 .navigation-list-item {
   padding: 12px 24px;
   border-radius: 4px;
@@ -318,15 +325,7 @@ h1 {
   padding-top: 96px;
   padding-bottom: 72px;
 }
-
-.container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* ----------portfolio pages----------- */
 .sub-cart {
   margin-left: 24px;
 }
