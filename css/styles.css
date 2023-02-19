@@ -322,11 +322,8 @@ h1 {
 }
 /* -----------Portfolio (pages)----------- */
 .card {
-  height: 420px;
+  /* height: 420px; */
   flex-basis: calc(100% - 48px / 3);
-}
-.advertising {
-  outline: 1px solid var(--white-grey-color);
 }
 .advertising:nth-last-child(n + 4) {
   margin-bottom: 48px;
@@ -335,8 +332,10 @@ h1 {
   margin-bottom: 120px;
 }
 .card-content {
-  margin-top: 32px;
-  margin-left: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  outline: 1px solid var(--white-grey-color);
 }
 .card-set {
   column-gap: 24px;
