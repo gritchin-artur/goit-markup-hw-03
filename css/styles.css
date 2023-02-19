@@ -46,7 +46,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
 }
 
 .list {
@@ -178,7 +177,7 @@ h1 {
 }
 
 .part-text {
-  margin-left: 15px;
+  text-align: center;
 }
 
 .button-order {
@@ -186,7 +185,6 @@ h1 {
   padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid transparent;
-  display: inline-block;
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
@@ -195,7 +193,8 @@ h1 {
   color: var(--white-color);
   background-color: var(--blue-color);
   cursor: pointer;
-  margin-left: 495px;
+  display: block;
+  margin: auto;
 }
 
 .hero-centr {
@@ -246,7 +245,7 @@ h1 {
 }
 .card-team {
   background-color: var(--white-color);
-  width: 264px;
+  flex-basis: calc(100% - 72px / 4);
   height: 380px;
   box-shadow: 0px 1px 6px;
   border-radius: 0px 0px 4px 4px;
@@ -297,7 +296,6 @@ h1 {
   padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid #e7e9fc;
-  display: inline-block;
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
@@ -306,7 +304,6 @@ h1 {
   color: var(--blue-gray-color);
   background-color: var(--grey-color);
   cursor: pointer;
-  margin-right: 24px;
 }
 
 .navigation-list-item:hover,
@@ -320,20 +317,27 @@ h1 {
   flex-direction: row;
   padding-top: 96px;
   padding-bottom: 72px;
+  margin: auto;
+  column-gap: 24px;
 }
-/* ----------portfolio pages----------- */
-.sub-cart {
-  margin-left: 24px;
-}
+/* -----------Portfolio (pages)----------- */
 .card {
-  width: 360px;
   height: 420px;
+  flex-basis: calc(100% - 48px / 3);
 }
 .advertising {
-  outline: 1px solid #e7e9fc;
+  outline: 1px solid var(--white-grey-color);
+}
+.advertising:nth-last-child(n + 4) {
   margin-bottom: 48px;
+}
+.advertising:nth-child(n + 7) {
+  margin-bottom: 120px;
 }
 .card-content {
   margin-top: 32px;
   margin-left: 16px;
+}
+.card-set {
+  column-gap: 24px;
 }
