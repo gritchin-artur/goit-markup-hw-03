@@ -321,9 +321,7 @@ h1 {
 .card {
   flex-basis: calc(100% - 48px / 3);
 }
-.advertising:nth-last-child(n + 4) {
-  margin-bottom: 48px;
-}
+
 .advertising:nth-child(n + 7) {
   margin-bottom: 120px;
 }
@@ -334,5 +332,5 @@ h1 {
   outline: 1px solid var(--white-grey-color);
 }
 .card-set {
-  column-gap: 24px;
+  gap: 48px 24px;
 }
