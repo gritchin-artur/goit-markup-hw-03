@@ -56,8 +56,8 @@ body {
 .link {
   text-decoration: none;
 }
-.indentation li:not(:first-child) {
-  margin-left: 40px;
+.indentation li:not(:last-child) {
+  margin-right: 40px;
 }
 
 .secret {
@@ -92,6 +92,10 @@ body {
 .flex-centr {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.section {
+  padding: 120px 0;
 }
 
 /* header  */
@@ -105,9 +109,6 @@ body {
   outline: 1px solid #e7e9fc;
 }
 
-.connection {
-  margin-left: 332px;
-}
 .studio-logo {
   color: var(--primary-text-color);
 }
@@ -169,7 +170,8 @@ h1 {
 }
 .hero {
   background-color: var(--primary-text-color);
-  height: 600px;
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
 .hero-centr {
   margin-bottom: 48px;
@@ -197,10 +199,6 @@ h1 {
   margin: auto;
 }
 
-.hero-centr {
-  padding-top: 188px;
-}
-
 .button-order:hover,
 .button-order:focus {
   color: var(--white-color);
@@ -208,8 +206,9 @@ h1 {
 }
 
 /*------------ section 2 (About studio)---------*/
+
 .sub-studio {
-  padding-top: 120px;
+  padding-bottom: 0;
 }
 .manuscript li:not(:first-child) {
   margin-left: 24px;
@@ -232,11 +231,9 @@ h1 {
 .title-centr {
   text-align: center;
   padding-bottom: 72px;
-  padding-top: 120px;
 }
 .list-work li:not(:first-child) {
   margin-left: 24px;
-  padding-bottom: 120px;
 }
 /* -------------section 4 (Team)------------ */
 
@@ -322,7 +319,6 @@ h1 {
 }
 /* -----------Portfolio (pages)----------- */
 .card {
-  /* height: 420px; */
   flex-basis: calc(100% - 48px / 3);
 }
 .advertising:nth-last-child(n + 4) {
