@@ -289,6 +289,9 @@ h1 {
 }
 
 /* --------------Portfolio buttons------------- */
+.portfolio-menu {
+  padding-top: 40px;
+}
 .navigation-list-item {
   padding: 12px 24px;
   border-radius: 4px;
@@ -301,6 +304,7 @@ h1 {
   color: var(--blue-gray-color);
   background-color: var(--grey-color);
   cursor: pointer;
+  margin-bottom: 72px;
 }
 
 .navigation-list-item:hover,
@@ -312,8 +316,6 @@ h1 {
 .references {
   justify-content: center;
   flex-direction: row;
-  padding-top: 96px;
-  padding-bottom: 72px;
   margin: auto;
   column-gap: 24px;
 }
